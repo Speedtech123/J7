@@ -1,0 +1,64 @@
+packages j7
+
+
+import org.shapes.*;
+public class org1
+{
+public static void main(String args[])
+{
+circle c = new circle(5);
+triangle t = new triangle(5,10);
+rectangle r = new rectangle(4,5);
+c.display();
+t.display();
+r.display();
+}
+}
+
+package org.shapes;
+import java.math.*;
+public class circle
+{
+int r;
+public circle(int r)
+{
+this.r=r;
+}
+public void display()
+{
+System.out.println("Circumference of circle:\t"+((2*r)*Math.PI));
+System.out.println("Area of circle:\t"+((r*r)*Math.PI));
+}
+}
+
+package org.shapes;
+import java.math.*;
+public class triangle
+{
+int b,h;
+public triangle(int b,int h)
+{
+this.b=b;
+this.h=h;
+}
+public void display()
+{
+System.out.println("Area of triangle:\t"+(0.5*b*h));
+}
+}
+
+package org.shapes;
+mport java.math.*;
+public class rectangle
+{
+int l,b;
+public rectangle(int l,int b)
+{
+this.l=l;
+this.b=b;
+}
+public void display()
+{
+System.out.println("Area of rectangle:\t"+(l*b));
+}
+}
